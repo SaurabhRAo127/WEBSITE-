@@ -1,0 +1,439 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(230, 225, 218);
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(sc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#nav img{
+    height: 40px;
+}
+
+#nav{
+    height: 120px;
+    width: 100%;
+    /* background: linear-gradient( to bottom left, #984ab9e4, #d5d52c); */
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 150px ;
+    justify-content: flex-start; 
+}
+#nav h4{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#main{
+    position: relative;
+    background-color: rgba(34, 23, 0, 0.39), 
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#page1 h1{
+    font-size: 120px;
+    font-weight: 300;
+    position: relative;
+    
+}
+/* pseduo effect used */
+#page1 h1::before{
+    content:"Innovate. Transform. Succeed." ;
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 0.2px rgb(166, 197, 41);
+    z-index: -1;
+}
+
+
+#page1 h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+#page1 p{
+    font-size: 20px;
+    font-weight: 100;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+}
+
+.scroller{
+    /* background-color: rgb(26, 49, 178); */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+
+}
+.scroller h4{
+    display: inline-block;
+    /* white-space: nowrap; */
+    font-size: 90px;
+    font-weight: 50;
+    margin-right: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-style: italic; */
+    -webkit-text-stroke: 1px rgb(132, 185, 34);
+    color: transparent;
+}
+/* remove scrollbar */
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller h4:hover{
+    color: greenyellow;
+}
+.Scroller-in-1{
+   display: inline-block;
+   white-space: nowrap;
+   animation-name: scroll;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+
+@keyframes scroll{
+from{
+    transform: translateX(0);
+
+}
+to 
+{
+    transform: translateX(-100%); 
+}
+}
+
+/* about sectoin */
+#Aboutus-in{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px ;
+  
+    /* background-color: rgb(46, 46, 129); */
+}
+#Aboutus-in img{
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.aboutus {
+    width: 40%;
+    text-align: center;
+}
+
+.aboutus h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+   font-weight: 600;
+   margin-bottom: 40px
+}
+
+.aboutus p {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+}
+#page3 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+   font-weight: 600;
+   margin-bottom: 40px
+}
+#card-container{
+    background: linear-gradient( to bottom left, #984ab9e4, #3e6f1a);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 2;
+
+}
+.card{
+    height: 80%;
+    width: 25%;
+    background-color: blueviolet;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+
+}
+#cd1{
+ background-image: url(web_developer.webp);
+}
+#cd2{
+        background-image: url(Mobile-App-Development-.png);
+       }
+
+#cd3{
+    background-image: url(wd.jpg);
+   }
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+    padding-top: 160px;
+    padding: 15px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+.overlay h4{
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+   font-weight:  600px; 
+
+}
+.overlay p{
+    color: black;
+ 
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+
+}
+#page4 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+   font-weight: 600;
+   margin-bottom: 40px
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background: #bf7979; */
+    background: linear-gradient( to bottom left, #984ab9e4, #85bf29e0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  button {
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+  .footer {
+    height: 20vh;
+    width: 100%;
+    background:rgba(106, 99, 99, 0.29);
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+
+/* Large Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    #nav {
+        padding: 0 30px;
+        gap: 15px;
+    }
+
+    #page1 h1 {
+        font-size: 50px;
+    }
+
+    #card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #Aboutus-in {
+        padding: 0 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Aboutus-in img {
+        height: 220px;
+        width: 220px;
+    }
+
+    .aboutus {
+        width: 80%;
+    }
+
+    .aboutus h4 {
+        font-size: 28px;
+    }
+
+    .aboutus p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    #nav {
+        padding: 0 15px;
+    }
+
+    #page1 h1 {
+        font-size: 40px;
+    }
+
+    #page1 h2 {
+        font-size: 20px;
+    }
+
+    #page1 p {
+        font-size: 14px;
+    }
+
+    #card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #nav img {
+        height: 20px;
+    }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    #Aboutus-in {
+        height: auto;
+        padding: 0 15px;
+    }
+
+    #Aboutus-in img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .aboutus {
+        width: 100%;
+    }
+
+    .aboutus h4 {
+        font-size: 24px;
+    }
+
+    .aboutus p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+
+  @media (max-width: 768px) {
+    .contact-us {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-us form button {
+      padding: 12px;
+    }
+  
+    .footer a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+
+
